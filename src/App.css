@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d1117;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: rgb(212, 210, 212);
+  background: linear-gradient(
+    -45deg,
+    #241558 0%,
+    #130d7e 13%,
+    #420d9f 25%,
+    #490275 50%,
+    rgb(33, 12, 68) 65%,
+    rgb(38, 8, 59) 85%,
+    rgb(22, 3, 42) 95%,
+    #0d1117 100%
+  );
+  background-size: 400% 400%;
+  /* position: relative; */
+  animation: animate 15s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 55px;
+}
+
+.formInput input {
+  background: none;
+  color: white;
+  font-size: 16px;
+  border-color: none;
+  height: 30px;
+  width: 282px;
+  border-style: none;
+  border: 1px solid forestgreen;
+  border-radius: 5px;
+  box-shadow: 0 0 17px 6px forestgreen;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.formButton {
+  height: 38px;
+  width: 96px;
+  margin-top: 35px;
+  font-size: 16px;
+  background: none;
+  color: white;
+  border: 1px solid forestgreen;
+  box-shadow: 0 0 17px 6px forestgreen;
+  border-radius: 5px;
+}
+
+.formButton:hover {
+  cursor: pointer;
+  color: rgb(193, 188, 188);
+  outline: none !important;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.userDetailCard {
+  height: 513px;
+  width: 299px;
+  background-color: white;
+  /* border: 2px solid black; */
+  color: black;
+  border-radius: 27px;
+  border: 1px solid forestgreen;
+  box-shadow: 0 0 17px 6px forestgreen;
+}
+
+.userImage .github-image {
+  height: 245px;
+  width: 300px;
+  border-radius: 23px 23px 0 0;
+}
+
+.userImage .my-image {
+  height: 127px;
+  width: 128px;
+  border-radius: 50%;
+  margin-top: -70px;
+}
+
+h4, p{
+  margin: 0;
+}
+
+em{
+  font-size: 20px;
+}
+
+p{
+  font-size: 20px;
+}
+
+.about{
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+}
+
+.about .follower{
+  margin: 10px
+}
+
+.about .following{
+  margin: 10px
+}
+
+.about .repo{
+  margin: 10px
+}
